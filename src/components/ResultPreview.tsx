@@ -108,7 +108,7 @@ export const ResultPreview = ({
         errorCorrectionLevel: "M",
         type: "image/png",
         color: {
-          dark: "#2563eb",
+          dark: "#1a1a1a",
           light: "#ffffff",
         },
       });
@@ -144,7 +144,7 @@ export const ResultPreview = ({
           {/* Celebration header */}
           <div className="flex-shrink-0 text-center mb-3">
             <div className="inline-flex items-center gap-2 bg-white rounded-2xl px-4 py-2 shadow-sm">
-              <PartyPopper className="w-5 h-5 text-amber-400" />
+              <PartyPopper className="w-5 h-5 text-stone-400" />
               <h2 className="text-stone-900 text-base font-bold">{t.result.title}</h2>
             </div>
           </div>
@@ -161,7 +161,7 @@ export const ResultPreview = ({
           <div className="flex-shrink-0 space-y-2">
             <Button
               onClick={handleDownload}
-              className="w-full bg-rose-400 hover:bg-rose-500 gap-2 rounded-xl h-12 font-semibold shadow-sm"
+              className="w-full bg-stone-900 hover:bg-stone-800 gap-2 rounded-xl h-12 font-semibold shadow-sm"
             >
               <Download className="w-5 h-5" />
               {t.result.downloadImage}
@@ -196,7 +196,7 @@ export const ResultPreview = ({
       <div className="w-full max-w-5xl h-full flex flex-col py-4">
         <div className="text-center mb-4 flex-shrink-0">
           <div className="inline-flex items-center gap-2.5 bg-white rounded-2xl px-6 py-3 shadow-sm">
-            <PartyPopper className="w-6 h-6 text-amber-400" />
+            <PartyPopper className="w-6 h-6 text-stone-400" />
             <h2 className="text-stone-900 text-2xl font-bold">{t.result.title}</h2>
           </div>
         </div>
@@ -215,7 +215,7 @@ export const ResultPreview = ({
             <Button
               onClick={handleDownload}
               size="lg"
-              className="bg-rose-400 hover:bg-rose-500 gap-2 rounded-xl py-5 text-base font-semibold shadow-sm"
+              className="bg-stone-900 hover:bg-stone-800 gap-2 rounded-xl py-5 text-base font-semibold shadow-sm"
             >
               <Download className="w-5 h-5" />
               {t.result.downloadImage}
@@ -257,7 +257,7 @@ export const ResultPreview = ({
           <div className="flex flex-col items-center p-6">
             {isGeneratingQR ? (
               <div className="w-64 h-64 flex items-center justify-center">
-                <Loader2 className="w-12 h-12 text-blue-600 animate-spin" />
+                <Loader2 className="w-12 h-12 text-stone-600 animate-spin" />
               </div>
             ) : qrCodeUrl ? (
               <>
@@ -286,7 +286,7 @@ export const ResultPreview = ({
                         {t.result.copy}
                       </Button>
                     </div>
-                    <p className="text-sm text-blue-600 text-center font-medium">
+                    <p className="text-sm text-stone-600 text-center font-medium">
                       {t.result.linkExpiry}
                     </p>
                   </div>

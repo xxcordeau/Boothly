@@ -21,7 +21,7 @@ const TEMPLATE_ICONS = {
   "horizontal-line-4": HorizontalLine4Icon,
 };
 
-const ICON_COLORS = ["bg-amber-400", "bg-rose-400", "bg-sky-400", "bg-emerald-400", "bg-violet-400"];
+const ICON_COLORS = ["bg-stone-900", "bg-stone-700", "bg-stone-600", "bg-stone-500", "bg-stone-400"];
 
 export const TemplateSelector = ({ onSelect, onBack, mode }: TemplateSelectorProps) => {
   const { t } = useTranslation();

@@ -133,7 +133,7 @@ export const ThemeSelector = ({
                 >
                   <div className={`p-3 border rounded-2xl transition-all ${
                     isSelected
-                      ? "bg-rose-50 border-rose-300 shadow-md"
+                      ? "bg-stone-50 border-stone-400 shadow-md"
                       : "bg-white border-stone-200 shadow-sm"
                   }`}>
                     <div className="flex items-center gap-3">
@@ -144,7 +144,7 @@ export const ThemeSelector = ({
                         <h3 className="text-stone-800 text-sm font-semibold">{theme.name}</h3>
                       </div>
                       {isSelected && (
-                        <div className="w-6 h-6 bg-rose-400 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div className="w-6 h-6 bg-stone-900 rounded-full flex items-center justify-center flex-shrink-0">
                           <Check className="w-3.5 h-3.5 text-white" />
                         </div>
                       )}
@@ -159,7 +159,7 @@ export const ThemeSelector = ({
             <button
               onClick={handleSelect}
               disabled={!selectedThemeId}
-              className="w-full bg-rose-400 text-white py-3 rounded-xl font-semibold shadow-sm hover:bg-rose-500 disabled:opacity-40 transition-colors text-sm"
+              className="w-full bg-stone-900 text-white py-3 rounded-xl font-semibold shadow-sm hover:bg-stone-800 disabled:opacity-40 transition-colors text-sm"
             >
               {t.common.next}
             </button>
@@ -191,7 +191,7 @@ export const ThemeSelector = ({
                   >
                     <div className={`p-4 border rounded-2xl transition-all ${
                       isSelected
-                        ? "bg-rose-50 border-rose-300 shadow-lg"
+                        ? "bg-stone-50 border-stone-400 shadow-lg"
                         : "bg-white border-stone-200 shadow-md group-hover:shadow-lg"
                     }`}>
                       <div className="flex flex-col items-center text-center gap-3">
@@ -203,7 +203,7 @@ export const ThemeSelector = ({
                         </div>
                         <h3 className="text-stone-800 text-lg font-semibold">{theme.name}</h3>
                         {isSelected && (
-                          <div className="absolute top-3 right-3 w-8 h-8 bg-rose-400 rounded-full flex items-center justify-center shadow-sm">
+                          <div className="absolute top-3 right-3 w-8 h-8 bg-stone-900 rounded-full flex items-center justify-center shadow-sm">
                             <Check className="w-4 h-4 text-white" />
                           </div>
                         )}
@@ -220,7 +220,7 @@ export const ThemeSelector = ({
           <button
             onClick={handleSelect}
             disabled={!selectedThemeId}
-            className="bg-rose-400 text-white px-16 py-4 rounded-xl font-semibold shadow-sm hover:bg-rose-500 disabled:opacity-40 transition-colors text-lg"
+            className="bg-stone-900 text-white px-16 py-4 rounded-xl font-semibold shadow-sm hover:bg-stone-800 disabled:opacity-40 transition-colors text-lg"
           >
             {t.common.next}
           </button>

@@ -40,7 +40,7 @@ export const PrintCountSelector = ({ onSelect, onBack, templateId, mode = "basic
               return (
                 <button key={option.count} onClick={() => setSelectedOption(option)}
                   className={`relative flex flex-col items-center gap-2 p-3 rounded-2xl transition-all ${
-                    isSelected ? "bg-amber-400 shadow-md -translate-y-0.5" : "bg-white shadow-sm active:shadow-md"
+                    isSelected ? "bg-stone-900 shadow-md -translate-y-0.5" : "bg-white shadow-sm active:shadow-md"
                   }`}
                 >
                   {isSelected && (
@@ -64,8 +64,8 @@ export const PrintCountSelector = ({ onSelect, onBack, templateId, mode = "basic
           <div className="bg-white p-3 rounded-2xl mb-3 flex-shrink-0 shadow-sm">
             <div className="flex items-center justify-center gap-4">
               <div className="flex items-center gap-2">
-                <div className="p-2 bg-amber-50 rounded-lg">
-                  <Image className="w-4 h-4 text-amber-500" />
+                <div className="p-2 bg-stone-100 rounded-lg">
+                  <Image className="w-4 h-4 text-stone-500" />
                 </div>
                 <div>
                   <p className="text-xs text-stone-400 font-medium">{t.printCount.title}</p>
@@ -81,7 +81,7 @@ export const PrintCountSelector = ({ onSelect, onBack, templateId, mode = "basic
           </div>
 
           <button onClick={() => onSelect(selectedOption)}
-            className="flex-shrink-0 w-full py-3 bg-rose-400 text-white rounded-xl text-sm font-bold shadow-sm hover:bg-rose-500 transition-colors"
+            className="flex-shrink-0 w-full py-3 bg-stone-900 text-white rounded-xl text-sm font-bold shadow-sm hover:bg-stone-800 transition-colors"
           >
             {t.common.next}
           </button>
@@ -104,7 +104,7 @@ export const PrintCountSelector = ({ onSelect, onBack, templateId, mode = "basic
                   <button key={option.count} onClick={() => setSelectedOption(option)}
                     className={`relative flex flex-col items-center gap-3 p-5 rounded-2xl transition-all ${
                       isSelected
-                        ? "bg-amber-400 shadow-lg -translate-y-1"
+                        ? "bg-stone-900 shadow-lg -translate-y-1"
                         : "bg-white shadow-md hover:-translate-y-0.5 hover:shadow-lg"
                     }`}
                   >
@@ -131,8 +131,8 @@ export const PrintCountSelector = ({ onSelect, onBack, templateId, mode = "basic
             <div className="bg-white p-4 rounded-2xl shadow-sm">
               <div className="flex items-center justify-center gap-8">
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-amber-50 rounded-xl">
-                    <Image className="w-5 h-5 text-amber-500" />
+                  <div className="p-2 bg-stone-100 rounded-xl">
+                    <Image className="w-5 h-5 text-stone-500" />
                   </div>
                   <div>
                     <p className="text-sm text-stone-400 font-medium">{t.printCount.title}</p>
@@ -151,7 +151,7 @@ export const PrintCountSelector = ({ onSelect, onBack, templateId, mode = "basic
 
         <div className="flex justify-center px-6 flex-shrink-0">
           <button onClick={() => onSelect(selectedOption)}
-            className="px-16 py-4 bg-rose-400 text-white rounded-xl text-lg font-bold shadow-sm hover:bg-rose-500 hover:-translate-y-0.5 transition-all"
+            className="px-16 py-4 bg-stone-900 text-white rounded-xl text-lg font-bold shadow-sm hover:bg-stone-800 hover:-translate-y-0.5 transition-all"
           >
             {t.common.next}
           </button>

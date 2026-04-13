@@ -59,7 +59,7 @@ export const PaymentSelector = ({
         <div className="w-full max-w-md">
           <div className="p-10 bg-white border border-stone-200 rounded-2xl shadow-xl">
             <div className="flex flex-col items-center text-center gap-5">
-              <div className="w-18 h-18 bg-amber-50 rounded-2xl flex items-center justify-center p-4">
+              <div className="w-18 h-18 bg-stone-100 rounded-2xl flex items-center justify-center p-4">
                 <Loader2 className="w-10 h-10 text-amber-400 animate-spin" />
               </div>
               <div>
@@ -67,13 +67,13 @@ export const PaymentSelector = ({
                 <p className="text-stone-500">{t.payment.pleaseWait}</p>
               </div>
               {selectedMethod === "card" && (
-                <div className="bg-sky-50 border border-sky-200 p-4 rounded-xl w-full">
-                  <p className="text-sky-600 text-sm">{t.payment.cardInstructions}</p>
+                <div className="bg-stone-50 border border-stone-200 p-4 rounded-xl w-full">
+                  <p className="text-stone-600 text-sm">{t.payment.cardInstructions}</p>
                 </div>
               )}
               {selectedMethod === "cash" && (
-                <div className="bg-emerald-50 border border-emerald-200 p-4 rounded-xl w-full">
-                  <p className="text-emerald-600 text-sm">{t.payment.cashInstructions}</p>
+                <div className="bg-stone-50 border border-stone-200 p-4 rounded-xl w-full">
+                  <p className="text-stone-600 text-sm">{t.payment.cashInstructions}</p>
                 </div>
               )}
             </div>
@@ -89,7 +89,7 @@ export const PaymentSelector = ({
         <div className="w-full max-w-md">
           <div className="p-10 bg-white border border-stone-200 rounded-2xl shadow-xl">
             <div className="flex flex-col items-center text-center gap-5">
-              <div className="bg-emerald-50 rounded-2xl p-4">
+              <div className="bg-stone-50 rounded-2xl p-4">
                 <CheckCircle className="w-12 h-12 text-emerald-400" />
               </div>
               <div>
@@ -118,7 +118,7 @@ export const PaymentSelector = ({
               </div>
               <button
                 onClick={handleRetry}
-                className="w-full bg-rose-400 text-white py-3 rounded-xl font-semibold shadow-sm hover:bg-rose-500 transition-colors"
+                className="w-full bg-stone-900 text-white py-3 rounded-xl font-semibold shadow-sm hover:bg-stone-800 transition-colors"
               >
                 {t.payment.tryAgain}
               </button>
@@ -136,7 +136,7 @@ export const PaymentSelector = ({
           <PageHeader title={t.payment.title} subtitle={t.payment.subtitle} />
 
           <div className="text-center flex-shrink-0 mb-4">
-            <div className="inline-flex items-center gap-2 bg-amber-400 text-white px-5 py-2.5 rounded-xl shadow-sm font-semibold">
+            <div className="inline-flex items-center gap-2 bg-stone-900 text-white px-5 py-2.5 rounded-xl shadow-sm font-semibold">
               <span className="text-sm opacity-90">{t.payment.totalAmount}</span>
               <span className="text-xl">{amount.toLocaleString()}{t.payment.won}</span>
             </div>
@@ -148,7 +148,7 @@ export const PaymentSelector = ({
               className="flex-1 text-left transition-opacity active:opacity-70"
             >
               <div className="h-full p-5 bg-white border border-stone-200 rounded-2xl flex items-center gap-4 shadow-md hover:shadow-lg transition-shadow">
-                <div className="w-14 h-14 bg-sky-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                <div className="w-14 h-14 bg-stone-900 rounded-xl flex items-center justify-center flex-shrink-0">
                   <CreditCard className="w-7 h-7 text-white" />
                 </div>
                 <div className="flex-1 min-w-0">
@@ -163,7 +163,7 @@ export const PaymentSelector = ({
               className="flex-1 text-left transition-opacity active:opacity-70"
             >
               <div className="h-full p-5 bg-white border border-stone-200 rounded-2xl flex items-center gap-4 shadow-md hover:shadow-lg transition-shadow">
-                <div className="w-14 h-14 bg-emerald-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                <div className="w-14 h-14 bg-stone-600 rounded-xl flex items-center justify-center flex-shrink-0">
                   <Banknote className="w-7 h-7 text-white" />
                 </div>
                 <div className="flex-1 min-w-0">
@@ -193,7 +193,7 @@ export const PaymentSelector = ({
         <div className="text-center px-6 pb-5 flex-shrink-0">
           <h1 className="text-stone-900 mb-2 text-5xl font-bold tracking-tight">{t.payment.title}</h1>
           <p className="text-stone-500 mb-5 text-xl">{t.payment.subtitle}</p>
-          <div className="inline-flex items-center gap-3 bg-amber-400 text-white px-8 py-4 rounded-2xl shadow-sm font-semibold">
+          <div className="inline-flex items-center gap-3 bg-stone-900 text-white px-8 py-4 rounded-2xl shadow-sm font-semibold">
             <span className="text-xl">{t.payment.totalAmount}</span>
             <span className="text-4xl font-bold">{amount.toLocaleString()}{t.payment.won}</span>
           </div>
@@ -207,12 +207,12 @@ export const PaymentSelector = ({
             >
               <div className="p-8 bg-white border border-stone-200 rounded-2xl h-full shadow-md group-hover:shadow-xl transition-shadow">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-20 h-20 bg-sky-400 rounded-2xl flex items-center justify-center mb-5">
+                  <div className="w-20 h-20 bg-stone-900 rounded-2xl flex items-center justify-center mb-5">
                     <CreditCard className="w-10 h-10 text-white" />
                   </div>
                   <h2 className="text-stone-900 mb-2 text-2xl font-bold">{t.payment.card.title}</h2>
                   <p className="text-stone-500 mb-6 text-base">{t.payment.card.description}</p>
-                  <div className="w-full bg-sky-400 text-white py-3 px-6 rounded-xl text-base font-semibold">
+                  <div className="w-full bg-stone-900 text-white py-3 px-6 rounded-xl text-base font-semibold">
                     {t.payment.card.button}
                   </div>
                 </div>
@@ -225,12 +225,12 @@ export const PaymentSelector = ({
             >
               <div className="p-8 bg-white border border-stone-200 rounded-2xl h-full shadow-md group-hover:shadow-xl transition-shadow">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-20 h-20 bg-emerald-400 rounded-2xl flex items-center justify-center mb-5">
+                  <div className="w-20 h-20 bg-stone-600 rounded-2xl flex items-center justify-center mb-5">
                     <Banknote className="w-10 h-10 text-white" />
                   </div>
                   <h2 className="text-stone-900 mb-2 text-2xl font-bold">{t.payment.cash.title}</h2>
                   <p className="text-stone-500 mb-6 text-base">{t.payment.cash.description}</p>
-                  <div className="w-full bg-emerald-400 text-white py-3 px-6 rounded-xl text-base font-semibold">
+                  <div className="w-full bg-stone-600 text-white py-3 px-6 rounded-xl text-base font-semibold">
                     {t.payment.cash.button}
                   </div>
                 </div>

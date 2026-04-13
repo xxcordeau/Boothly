@@ -25,8 +25,8 @@ export const ModeSelector = ({ onSelect }: ModeSelectorProps) => {
             <button onClick={() => onSelect('basic')} className="flex-1 text-left active:scale-[0.98] transition-transform">
               <div className="h-full p-4 bg-white rounded-2xl flex flex-col shadow-sm">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 bg-amber-400 rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
-                    <Palette className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 bg-stone-100 rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                    <Palette className="w-6 h-6 text-stone-700" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h2 className="text-stone-900 text-base font-bold">{t.modeSelector.basic.title}</h2>
@@ -37,13 +37,13 @@ export const ModeSelector = ({ onSelect }: ModeSelectorProps) => {
                   <ul className="mb-3 space-y-1">
                     {basicFeatures.map((f) => (
                       <li key={f} className="flex items-center gap-1.5">
-                        <Check className="w-3 h-3 text-amber-400 flex-shrink-0" />
+                        <Check className="w-3 h-3 text-stone-400 flex-shrink-0" />
                         <span className="text-stone-500 text-xs">{f}</span>
                       </li>
                     ))}
                   </ul>
                 )}
-                <div className="mt-auto w-full bg-amber-400 text-white py-2.5 px-4 rounded-xl text-center text-sm font-bold">
+                <div className="mt-auto w-full bg-stone-900 text-white py-2.5 px-4 rounded-xl text-center text-sm font-bold">
                   {t.modeSelector.basic.button}
                 </div>
               </div>
@@ -52,7 +52,7 @@ export const ModeSelector = ({ onSelect }: ModeSelectorProps) => {
             <button onClick={() => onSelect('special')} className="flex-1 text-left active:scale-[0.98] transition-transform">
               <div className="h-full p-4 bg-white rounded-2xl flex flex-col shadow-sm">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 bg-rose-400 rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                  <div className="w-12 h-12 bg-stone-900 rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
                     <Sparkles className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -64,13 +64,13 @@ export const ModeSelector = ({ onSelect }: ModeSelectorProps) => {
                   <ul className="mb-3 space-y-1">
                     {specialFeatures.map((f) => (
                       <li key={f} className="flex items-center gap-1.5">
-                        <Check className="w-3 h-3 text-rose-400 flex-shrink-0" />
+                        <Check className="w-3 h-3 text-stone-500 flex-shrink-0" />
                         <span className="text-stone-500 text-xs">{f}</span>
                       </li>
                     ))}
                   </ul>
                 )}
-                <div className="mt-auto w-full bg-rose-400 text-white py-2.5 px-4 rounded-xl text-center text-sm font-bold">
+                <div className="mt-auto w-full bg-stone-900 text-white py-2.5 px-4 rounded-xl text-center text-sm font-bold">
                   {t.modeSelector.special.button}
                 </div>
               </div>
@@ -91,8 +91,8 @@ export const ModeSelector = ({ onSelect }: ModeSelectorProps) => {
             <button onClick={() => onSelect('basic')} className="text-left group transition-transform hover:-translate-y-1">
               <div className="p-8 bg-white rounded-2xl h-full shadow-sm group-hover:shadow-lg transition-shadow">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-20 h-20 bg-amber-400 rounded-2xl flex items-center justify-center mb-5 shadow-sm">
-                    <Palette className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-stone-100 rounded-2xl flex items-center justify-center mb-5 shadow-sm">
+                    <Palette className="w-10 h-10 text-stone-700" />
                   </div>
                   <h2 className="text-stone-900 mb-2 text-2xl font-bold">{t.modeSelector.basic.title}</h2>
                   <p className="text-stone-400 mb-4 text-base">{t.modeSelector.basic.description}</p>
@@ -100,13 +100,13 @@ export const ModeSelector = ({ onSelect }: ModeSelectorProps) => {
                     <ul className="text-left w-full mb-6 space-y-1.5">
                       {basicFeatures.map((f) => (
                         <li key={f} className="flex items-center gap-2">
-                          <Check className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />
+                          <Check className="w-3.5 h-3.5 text-stone-400 flex-shrink-0" />
                           <span className="text-stone-500 text-sm">{f}</span>
                         </li>
                       ))}
                     </ul>
                   )}
-                  <div className="w-full bg-amber-400 text-white py-3 px-6 rounded-xl text-base font-bold">
+                  <div className="w-full bg-stone-900 text-white py-3 px-6 rounded-xl text-base font-bold">
                     {t.modeSelector.basic.button}
                   </div>
                 </div>
@@ -116,7 +116,7 @@ export const ModeSelector = ({ onSelect }: ModeSelectorProps) => {
             <button onClick={() => onSelect('special')} className="text-left group transition-transform hover:-translate-y-1">
               <div className="p-8 bg-white rounded-2xl h-full shadow-sm group-hover:shadow-lg transition-shadow">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-20 h-20 bg-rose-400 rounded-2xl flex items-center justify-center mb-5 shadow-sm">
+                  <div className="w-20 h-20 bg-stone-900 rounded-2xl flex items-center justify-center mb-5 shadow-sm">
                     <Sparkles className="w-10 h-10 text-white" />
                   </div>
                   <h2 className="text-stone-900 mb-2 text-2xl font-bold">{t.modeSelector.special.title}</h2>
@@ -125,13 +125,13 @@ export const ModeSelector = ({ onSelect }: ModeSelectorProps) => {
                     <ul className="text-left w-full mb-6 space-y-1.5">
                       {specialFeatures.map((f) => (
                         <li key={f} className="flex items-center gap-2">
-                          <Check className="w-3.5 h-3.5 text-rose-400 flex-shrink-0" />
+                          <Check className="w-3.5 h-3.5 text-stone-500 flex-shrink-0" />
                           <span className="text-stone-500 text-sm">{f}</span>
                         </li>
                       ))}
                     </ul>
                   )}
-                  <div className="w-full bg-rose-400 text-white py-3 px-6 rounded-xl text-base font-bold">
+                  <div className="w-full bg-stone-900 text-white py-3 px-6 rounded-xl text-base font-bold">
                     {t.modeSelector.special.button}
                   </div>
                 </div>

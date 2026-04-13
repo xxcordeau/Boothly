@@ -158,7 +158,7 @@ export const CameraPreview = ({
     return (
       <div className={`${isMobile ? 'h-[calc(100dvh-56px)]' : 'h-[calc(100vh-56px)]'} flex flex-col items-center justify-center bg-black overflow-hidden`}>
         <div className="text-center">
-          <div className="w-12 h-12 border-4 border-rose-400 border-t-transparent rounded-full animate-spin mx-auto mb-3" />
+          <div className="w-12 h-12 border-4 border-stone-400 border-t-transparent rounded-full animate-spin mx-auto mb-3" />
           <p className="text-white/70 text-sm">카메라를 준비하는 중...</p>
         </div>
       </div>
@@ -184,7 +184,7 @@ export const CameraPreview = ({
       )}
       {countdown !== null && countdown > 0 && (
         <div className="absolute inset-0 flex items-center justify-center bg-white/80" style={{ pointerEvents: 'none', zIndex: 3 }}>
-          <div className="text-rose-400 font-bold animate-pulse" style={{ fontSize: isMobile ? '6rem' : '8rem' }}>{countdown}</div>
+          <div className="text-white font-bold animate-pulse" style={{ fontSize: isMobile ? '6rem' : '8rem' }}>{countdown}</div>
         </div>
       )}
       {/* Progress pill — dots + counter */}
@@ -207,7 +207,7 @@ export const CameraPreview = ({
       )}
       {/* Auto-timer */}
       {!isCapturing && countdown === null && isVideoReady && (
-        <div className={`absolute left-1/2 -translate-x-1/2 px-3 py-1.5 rounded-full transition-all ${autoCountdown <= 3 ? 'bg-red-500 animate-pulse' : 'bg-black/60 backdrop-blur-sm'}`}
+        <div className={`absolute left-1/2 -translate-x-1/2 px-3 py-1.5 rounded-full transition-all ${autoCountdown <= 3 ? 'bg-stone-900 animate-pulse' : 'bg-black/60 backdrop-blur-sm'}`}
           style={{ zIndex: 10, top: isMobile ? '3.5rem' : '3.5rem' }}>
           <p className="text-white text-xs font-semibold">
             {autoCountdown}{t.frameColor.seconds} {t.camera.autoCapture}
@@ -220,7 +220,7 @@ export const CameraPreview = ({
         </div>
       )}
       {isDemoMode && (
-        <div className="absolute bottom-4 left-4 bg-amber-400 px-2.5 py-1 rounded-lg" style={{ zIndex: 10 }}>
+        <div className="absolute bottom-4 left-4 bg-stone-700 px-2.5 py-1 rounded-lg" style={{ zIndex: 10 }}>
           <div className="flex items-center gap-1.5">
             <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
             <p className="text-white text-xs font-semibold">DEMO</p>
@@ -248,7 +248,7 @@ export const CameraPreview = ({
             disabled={isCapturing || !isVideoReady}
             className="w-20 h-20 rounded-full bg-white disabled:opacity-40 active:scale-95 transition-transform flex items-center justify-center shadow-lg"
           >
-            <div className="w-16 h-16 rounded-full bg-rose-400 flex items-center justify-center">
+            <div className="w-16 h-16 rounded-full bg-stone-900 flex items-center justify-center">
               <Camera className="w-7 h-7 text-white" />
             </div>
           </button>
@@ -272,7 +272,7 @@ export const CameraPreview = ({
             onClick={onCapture}
             disabled={isCapturing || !isVideoReady}
             size="lg"
-            className="bg-rose-400 hover:bg-rose-500 px-12 py-5 rounded-2xl text-white gap-2 disabled:opacity-50 font-semibold text-lg shadow-sm transition-colors"
+            className="bg-stone-900 hover:bg-stone-800 px-12 py-5 rounded-2xl text-white gap-2 disabled:opacity-50 font-semibold text-lg shadow-sm transition-colors"
           >
             <Camera className="w-5 h-5" />
             {!isVideoReady ? t.camera.preparing : isCapturing ? t.camera.takingPhoto : t.camera.takePhoto}
