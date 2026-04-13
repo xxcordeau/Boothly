@@ -210,7 +210,7 @@ export const PaymentSelector = ({
                   <div className="w-20 h-20 bg-stone-900 rounded-2xl flex items-center justify-center mb-5">
                     <CreditCard className="w-10 h-10 text-white" />
                   </div>
-                  <h2 className="text-stone-900 mb-2 text-2xl font-bold">{t.payment.card.title}</h2>
+                  <h2 className="text-stone-900 mb-2 text-2xl font-semibold">{t.payment.card.title}</h2>
                   <p className="text-stone-500 mb-6 text-base">{t.payment.card.description}</p>
                   <div className="w-full bg-stone-900 text-white py-3 px-6 rounded-xl text-base font-semibold">
                     {t.payment.card.button}
@@ -228,7 +228,7 @@ export const PaymentSelector = ({
                   <div className="w-20 h-20 bg-stone-600 rounded-2xl flex items-center justify-center mb-5">
                     <Banknote className="w-10 h-10 text-white" />
                   </div>
-                  <h2 className="text-stone-900 mb-2 text-2xl font-bold">{t.payment.cash.title}</h2>
+                  <h2 className="text-stone-900 mb-2 text-2xl font-semibold">{t.payment.cash.title}</h2>
                   <p className="text-stone-500 mb-6 text-base">{t.payment.cash.description}</p>
                   <div className="w-full bg-stone-600 text-white py-3 px-6 rounded-xl text-base font-semibold">
                     {t.payment.cash.button}

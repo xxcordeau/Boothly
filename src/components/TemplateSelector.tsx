@@ -78,7 +78,7 @@ export const TemplateSelector = ({ onSelect, onBack, mode }: TemplateSelectorPro
                         <Icon className="w-10 h-10 text-white" />
                       </div>
                       <div>
-                        <h3 className="mb-1 text-stone-900 text-2xl font-bold">{t.templates[template.id]}</h3>
+                        <h3 className="mb-1 text-stone-900 text-2xl font-semibold">{t.templates[template.id]}</h3>
                         <p className="text-stone-400 text-base font-medium">{template.cuts}{t.templateSelector.photos}</p>
                       </div>
                     </div>

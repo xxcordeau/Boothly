@@ -94,7 +94,7 @@ export const ModeSelector = ({ onSelect }: ModeSelectorProps) => {
                   <div className="w-20 h-20 bg-stone-100 rounded-2xl flex items-center justify-center mb-5 shadow-sm">
                     <Palette className="w-10 h-10 text-stone-700" />
                   </div>
-                  <h2 className="text-stone-900 mb-2 text-2xl font-bold">{t.modeSelector.basic.title}</h2>
+                  <h2 className="text-stone-900 mb-2 text-2xl font-semibold">{t.modeSelector.basic.title}</h2>
                   <p className="text-stone-400 mb-4 text-base">{t.modeSelector.basic.description}</p>
                   {basicFeatures.length > 0 && (
                     <ul className="text-left w-full mb-6 space-y-1.5">
@@ -119,7 +119,7 @@ export const ModeSelector = ({ onSelect }: ModeSelectorProps) => {
                   <div className="w-20 h-20 bg-stone-900 rounded-2xl flex items-center justify-center mb-5 shadow-sm">
                     <Sparkles className="w-10 h-10 text-white" />
                   </div>
-                  <h2 className="text-stone-900 mb-2 text-2xl font-bold">{t.modeSelector.special.title}</h2>
+                  <h2 className="text-stone-900 mb-2 text-2xl font-semibold">{t.modeSelector.special.title}</h2>
                   <p className="text-stone-400 mb-4 text-base">{t.modeSelector.special.description}</p>
                   {specialFeatures.length > 0 && (
                     <ul className="text-left w-full mb-6 space-y-1.5">
