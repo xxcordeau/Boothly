@@ -176,8 +176,10 @@ export const ThemeSelector = ({
 
         <div className="flex-shrink-0 px-6 pb-3">
           {themes.length === 0 ? emptyState : (
-            <div className={`flex gap-5 overflow-x-auto pb-2 ${
-              themes.length <= 2 ? "justify-center" : "md:grid md:grid-cols-3 md:max-w-5xl md:mx-auto"
+            <div className={`grid gap-5 ${
+              themes.length <= 2
+                ? "grid-cols-2 max-w-2xl mx-auto"
+                : "grid-cols-3 max-w-5xl mx-auto"
             }`}>
               {themes.map((theme) => {
                 const isSelected = selectedThemeId === theme.id;
@@ -185,7 +187,7 @@ export const ThemeSelector = ({
                   <button
                     key={theme.id}
                     onClick={() => setSelectedThemeId(theme.id)}
-                    className="relative flex-shrink-0 w-[240px] md:w-auto h-fit group transition-transform hover:-translate-y-1"
+                    className="relative w-full h-fit group transition-transform hover:-translate-y-1"
                   >
                     <div className={`p-4 border rounded-2xl transition-all ${
                       isSelected
