@@ -25,41 +25,4 @@ A browser-based photo booth service. Take photos with your webcam, apply decorat
 | Backend / DB | Supabase |
 | Deployment | Netlify (GitHub auto-deploy) |
 
-## Getting Started
 
-```bash
-# 1. Clone
-git clone https://github.com/xxcordeau/Boothly.git
-cd Boothly
-
-# 2. Install
-npm install
-
-# 3. Set environment variables
-cp .env.example .env.local
-# Fill in VITE_SUPABASE_PROJECT_ID and VITE_SUPABASE_ANON_KEY
-
-# 4. Run
-npm run dev
-```
-
-### Environment Variables
-
-```
-VITE_SUPABASE_PROJECT_ID=your_project_id
-VITE_SUPABASE_ANON_KEY=your_anon_key
-```
-
-## Project Structure
-
-```
-src/
-├── components/       # UI components (CameraPreview, FrameColorSelector, …)
-├── pages/            # Route-level pages
-├── utils/            # Supabase client, helpers
-└── styles/           # Global CSS & animations
-```
-
-## License
-
-MIT
